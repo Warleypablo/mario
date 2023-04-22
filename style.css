@@ -1,0 +1,72 @@
+*{
+	
+	margin: 0;	
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.game-board {
+	width: 80%;
+	height: 500px;
+	border: 10px solid green;
+	margin: 0 auto;
+	position: relative;
+	overflow:hidden;
+	background: #87ceeb;	
+}
+.texto{
+	margin:auto;
+	width: 80%;
+	height: 500px;
+	font-family: helvetica, sans-seriff;
+}
+.fundo{
+	width:100%;
+	height:500px;
+}
+.tubo {
+	position: absolute;
+	bottom: 0;
+	width: 80px;
+	animation: tubo-animation 1s infinite linear;
+	
+;
+}
+
+.Pipe {
+	width:120px;
+	bottom: 0;
+	position: absolute;
+	
+}
+.jump{animation:jump 500ms ease-out;
+}
+
+@keyframes tubo-animation{
+	from{
+		right:-80px;
+	}
+	to {
+		right: 100%;
+	}
+}
+  
+@keyframes jump{
+	0%{
+		bottom:0;
+	}
+	40%{
+		bottom:180px;
+	}
+	50% {
+		bottom:180px;
+	}
+	60%{
+		bottom:180px;
+	}
+	
+	100%{
+		bottom:0
+	}
+}
+
